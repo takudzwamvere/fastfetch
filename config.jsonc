@@ -1,10 +1,14 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "source": "/home/plague/.config/fastfetch/ramona-flowers.png",
+    "type": "sixel",
+    "source": "/home/plague/.config/fastfetch/mary.jpg",
+    "width": 50,
     "height": 23,
     "padding": {
-      "top": 3
+      "top": 1,
+      "right": 2,
+      "left": 2
     }
   },
   "modules": [
@@ -23,7 +27,6 @@
     "theme",
     "icons",
     "font",
-    "cursor",
     "terminal",
     "terminalfont",
     "cpu",
@@ -31,10 +34,8 @@
     "memory",
     "swap",
     "disk",
-    "localip",
     "battery",
     "poweradapter",
-    "locale",
     "break",
     "colors"
   ]
