@@ -1,31 +1,25 @@
-# 🌸 Ramona Flowers Fastfetch Configuration
+# 🌸 Ramona Flowers Fastfetch Configurations
 
-A custom, Scott Pilgrim-themed `fastfetch` configuration featuring a beautifully aligned Ramona Flowers image logo and a vibrant rainbow color scheme for the system information text.
+A custom, Scott Pilgrim-themed `fastfetch` setup featuring a beautifully aligned Ramona Flowers image logo. This repository details two configuration variations: **Default Blue** and **My Own Colorful (Rainbow)**.
 
 ---
 
 ## 📸 Screenshots
 
-### Custom Layout with Rainbow Keys
-![Main Terminal Output Screenshot](screenshot.png)
+### Default Blue Setup
+![Default Blue Setup](default-blue.png)
 
-### Desktop Overview
-![Desktop Setup Screenshot](sreenshot-2.png)
-
----
-
-## ✨ Features
-
-- **Ramona Flowers Image Logo**: Configured to display `ramona-flowers.png` natively with alpha transparency preservation (utilizing `kitty` graphics protocol/auto detection).
-- **Optimized Alignment**: Configured with custom dimensions (`50x23`) and specific padding (`top: 1`, `right: 2`, `left: 2`) to align perfectly with the text block.
-- **Rainbow Key Colors**: Each info category key has been custom-colored with a gorgeous terminal palette rotation (Red, Green, Yellow, Blue, Magenta, Cyan).
-- **Tailored Modules List**: Cleaned up to exclude redundant information while retaining important resource details.
+### My Own Colorful Setup
+![My Own Colorful Setup](colourful.png)
 
 ---
 
-## 🛠️ Configuration Details
+## 🛠️ Configurations
 
-Below is the complete `config.jsonc` used for this setup:
+Here are the configuration blocks for both setups:
+
+### 1. My Own Colorful Setup (Active)
+This setup applies a vibrant rainbow key color rotation (Red, Green, Yellow, Blue, Magenta, Cyan) to the system details.
 
 ```jsonc
 {
@@ -132,6 +126,54 @@ Below is the complete `config.jsonc` used for this setup:
       "type": "poweradapter",
       "keyColor": "blue"
     },
+    "break",
+    "colors"
+  ]
+}
+```
+
+### 2. Default Blue Setup
+This setup keeps the default terminal/fastfetch blue keys for a clean, classic appearance.
+
+```jsonc
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "/home/plague/.config/fastfetch/ramona-flowers.png",
+    "width": 50,
+    "height": 23,
+    "padding": {
+      "top": 1,
+      "right": 2,
+      "left": 2
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "battery",
+    "poweradapter",
     "break",
     "colors"
   ]
