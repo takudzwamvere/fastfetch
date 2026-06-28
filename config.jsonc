@@ -14,28 +14,94 @@
   "modules": [
     "title",
     "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "battery",
-    "poweradapter",
+    {
+      "type": "os",
+      "keyColor": "red"
+    },
+    {
+      "type": "host",
+      "keyColor": "green"
+    },
+    {
+      "type": "kernel",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "uptime",
+      "keyColor": "blue"
+    },
+    {
+      "type": "packages",
+      "keyColor": "blue"
+    },
+    {
+      "type": "shell",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "display",
+      "keyColor": "green"
+    },
+    {
+      "type": "de",
+      "keyColor": "green"
+    },
+    {
+      "type": "wm",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "wmtheme",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "theme",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "icons",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "font",
+      "keyColor": "green"
+    },
+    {
+      "type": "terminal",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "terminalfont",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "cpu",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "gpu",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "memory",
+      "keyColor": "green"
+    },
+    {
+      "type": "swap",
+      "keyColor": "green"
+    },
+    {
+      "type": "disk",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "battery",
+      "keyColor": "blue"
+    },
+    {
+      "type": "poweradapter",
+      "keyColor": "blue"
+    },
     "break",
     "colors"
   ]
